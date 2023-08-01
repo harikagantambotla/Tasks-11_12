@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day11-task</title>
+</head>
+<body>
+    <script>
+        function missingNum(arr) {
+  // Calculate the sum of numbers from 1 to 10 (inclusive)
+  const totalSum = (10 * (10 + 1)) / 2;
+
+  // Calculate the sum of the elements in the given array
+  const arraySum = arr.reduce((acc, num) => acc + num, 0);
+
+  // Find the missing number by subtracting the array sum from the total sum
+  const missingNumber = totalSum - arraySum;
+
+  return missingNumber;
+}
+
+// Example usage:
+const arr = [1, 2, 3, 4, 6, 7, 8, 9, 10];
+console.log(missingNum(arr));
+
+    </script>
+    
+</body>
+</html>
